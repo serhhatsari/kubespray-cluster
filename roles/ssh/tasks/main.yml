@@ -1,0 +1,8 @@
+---
+- name: Copy SSH key
+  ansible.builtin.copy:
+    src: /home/serhatsari/.ssh/id_rsa.pub
+    dest: /home/vagrant/.ssh/authorized_keys
+    owner: vagrant
+
+

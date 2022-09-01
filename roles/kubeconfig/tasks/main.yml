@@ -1,0 +1,20 @@
+---
+# tasks file for kubeconfig
+- name: Create a directory if it does not exist
+  ansible.builtin.file:
+    path: /home/vagrant/.kube
+    state: directory
+    mode: '0755'
+
+- name: Copy admin conf to kube conf
+  ansible.builtin.shell: cp -i /etc/kubernetes/admin.conf  /home/vagrant/.kube/config
+
+- name: Change owner 
+  ansible.builtin.shell: chown $(id -u):$(id -g) /home/vagrant/.kube/config
+
+- name: Change file ownership, group and permissions
+  ansible.builtin.file:
+    path:  /home/vagrant/.kube/config
+    owner: vagrant
+    group: vagrant
+    mode: '0644'

@@ -1,0 +1,6 @@
+---
+- name: Configure SSH Connections
+  hosts: all # local environment
+  become: yes # sudo privilige
+  roles:
+    - ssh
