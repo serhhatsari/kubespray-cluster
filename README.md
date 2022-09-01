@@ -5,6 +5,8 @@
 
 **Then, you can ssh one of the nodes to manage cluster**  
 `ssh vagrant@198.168.56.10`    
+*or*  
 `ssh vagrant@198.168.56.11`   
 
 
+ 
