@@ -1,4 +1,4 @@
-# Creating a Kubernetes Cluster (2 Nodes) with Kubespray, Vagrant and Ansible
+### Creating a Kubernetes Cluster (2 Nodes) with Kubespray, Vagrant and Ansible
 
 **In order to creat cluster, run the script:**  
 `./setup.sh`  
